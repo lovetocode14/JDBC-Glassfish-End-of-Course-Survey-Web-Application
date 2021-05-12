@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: canad
+  Date: 4/29/2021
+  Time: 6:42 PM
+-->
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+<h:head>
+    <title>Overall Experience</title>
+</h:head>
+
+<h:body>
+
+
+    <h:form>
+        <h:panelGrid id = "panel" columns = "2" border = "1"
+                     cellpadding ="10" cellspacing = "1">
+            <f:facet name = "header">
+                <h:outputText value = "Overall Experience (5/7)"/>
+            </f:facet>
+            <h:outputText style="font-weight:bold" value = "22. This was a worthwhile class"/>
+            <h:selectOneRadio value = "#{setDB.answer22}">
+                <f:selectItem itemValue = "Yes"
+                              itemLabel = "Yes"/>
+                <f:selectItem itemValue = "No"
+                              itemLabel = "No"/>
+
+            </h:selectOneRadio>
+
+
+            <h:outputText style="font-weight:bold" value = "23. Would you recommend this course to a fellow student"/>
+            <h:selectOneRadio value = "#{setDB.answer23}">
+                <f:selectItem itemValue = "Yes"
+                              itemLabel = "Yes"/>
+                <f:selectItem itemValue = "No"
+                              itemLabel = "No"/>
+
+            </h:selectOneRadio>
+
+
+            <h:outputText style="font-weight:bold" value = "24. Overall, how do you rate your experience in this course?"/>
+            <h:selectOneRadio value = "#{setDB.answer24}">
+                <f:selectItem itemValue = "Excellent"
+                              itemLabel = "Excellent"/>
+                <f:selectItem itemValue = "Very Good"
+                              itemLabel = "Very Good"/>
+                <f:selectItem itemValue = "Good"
+                              itemLabel = "Good"/>
+                <f:selectItem itemValue = "Fair"
+                              itemLabel = "Fair"/>
+                <f:selectItem itemValue = "Poor"
+                              itemLabel = "Poor"/>
+            </h:selectOneRadio>
+
+            <h:outputText style="font-weight:bold" value = "25. How many hours did you spend per week on preparation/homework
+                                                                for this course?"/>
+            <h:selectOneRadio value = "#{setDB.answer25}">
+                <f:selectItem itemValue = "A: 0-4h"
+                              itemLabel = "A: 0-4h"/>
+                <f:selectItem itemValue = "B: 5-8h"
+                              itemLabel = "B: 5-8h"/>
+                <f:selectItem itemValue = "C: 9-12h"
+                              itemLabel = "C: 9-12h"/>
+                <f:selectItem itemValue = "D: 12-16h"
+                              itemLabel = "D: 12-16h"/>
+
+            </h:selectOneRadio>
+
+            <h:outputText style ="font-weight:bold" value = "Comments (Teaching Approaches) - Please press enter after inputting"/>
+            <h:inputText value = "#{setDB.comment5}" rows="5" cols="80"  />
+
+            <f:facet name = "footer">
+                <h:panelGroup style = "display:block; text-align:center">
+
+                </h:panelGroup>
+            </f:facet>
+        </h:panelGrid>
+        <h:commandButton value = "Next" action = "#{setDB.toCategory6}"/>
+    </h:form>
+
+
+
+</h:body>
+
+</html>

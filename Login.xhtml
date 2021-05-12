@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: canad
+  Date: 4/29/2021
+  Time: 10:48 AM
+-->
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+
+
+<h:head >
+
+    <title>UHCL Course Evaluation</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+</h:head>
+
+<h:body style = "background-image: url(background.jpg); background-size: cover">
+    <div  style = "position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);">
+
+
+
+    <p:outputPanel title = "UHCL Survey Login" style = "background-color: aliceblue;
+ display:block; opacity: 0.92;
+    border-radius: 12px; width: 350px; height: 300px; text-align: center" >
+    <h:form>
+
+        <br/>
+
+        <div align = "center">
+            <h:graphicImage url = "UHCL_Logo.png"  style = "width: 200px; height: 75px"/>
+        </div>
+
+
+        <h:outputText value = "Course Evaluation"/>
+        <br/>
+        <br/>
+       <span class="ui-float-label">
+       <p:inputText id="float-user" value="#{setDB.user}"/>
+       <p:outputLabel  style="right: 140px" value="        Username"/>
+   </span>
+       <br/>
+
+       <span class="ui-float-label">
+       <p:password id="float-pass" value="#{setDB.user}"
+       feedback = "true" toggleMask = "true" redisplay = "true"/>
+       <p:outputLabel  style="right: 140px"  value="        Password"/>
+
+   </span>
+
+        <br/>
+       <p:commandButton  type = "submit" icon="pi pi-sign-in"  style = "font-size: 16px;"
+                        action = "#{setDB.toWelcome}" title = "Login" />
+        <p:commandButton type="submit" icon="pi pi-user-plus"  style = "font-size: 16px;"
+                         action = "CreateNewUser" title = "Create User" />
+    </h:form>
+    </p:outputPanel>
+    </div>
+</h:body>
+
+
+</html>

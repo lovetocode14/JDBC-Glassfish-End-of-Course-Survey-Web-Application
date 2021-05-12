@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: canad
+  Date: 4/29/2021
+  Time: 6:37 PM
+-->
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+<h:head>
+    <title>Resources and Administration</title>
+</h:head>
+
+<h:body>
+
+    <h:form>
+        <h:panelGrid id = "panel" columns = "2" border = "1"
+                     cellpadding ="10" cellspacing = "1">
+            <f:facet name = "header">
+                <h:outputText value = "Resources and Administration (3/7)"/>
+            </f:facet>
+            <h:outputText style="font-weight:bold" value = "14. The course was supported by adequate library resources"/>
+            <h:selectOneRadio value = "#{setDB.answer14}">
+                <f:selectItem itemValue = "Strongly Agree"
+                              itemLabel = "Strongly Agree"/>
+                <f:selectItem itemValue = "Agree"
+                              itemLabel = "Agree"/>
+                <f:selectItem itemValue = "Neutral"
+                              itemLabel = "Neutral"/>
+                <f:selectItem itemValue = "Disagree"
+                              itemLabel = "Disagree"/>
+                <f:selectItem itemValue = "Strongly Disagree"
+                              itemLabel = "Strongly Disagree"/>
+            </h:selectOneRadio>
+
+
+            <h:outputText style="font-weight:bold" value = "15. Blackboard resources for the course were useful"/>
+            <h:selectOneRadio value = "#{setDB.answer15}">
+                <f:selectItem itemValue = "Strongly Agree"
+                              itemLabel = "Strongly Agree"/>
+                <f:selectItem itemValue = "Agree"
+                              itemLabel = "Agree"/>
+                <f:selectItem itemValue = "Neutral"
+                              itemLabel = "Neutral"/>
+                <f:selectItem itemValue = "Disagree"
+                              itemLabel = "Disagree"/>
+                <f:selectItem itemValue = "Strongly Disagree"
+                              itemLabel = "Strongly Disagree"/>
+            </h:selectOneRadio>
+
+
+            <h:outputText style="font-weight:bold" value = "16. Instructor gave guidance on where to find resources"/>
+            <h:selectOneRadio value = "#{setDB.answer16}">
+                <f:selectItem itemValue = "Strongly Agree"
+                              itemLabel = "Strongly Agree"/>
+                <f:selectItem itemValue = "Agree"
+                              itemLabel = "Agree"/>
+                <f:selectItem itemValue = "Neutral"
+                              itemLabel = "Neutral"/>
+                <f:selectItem itemValue = "Disagree"
+                              itemLabel = "Disagree"/>
+                <f:selectItem itemValue = "Strongly Disagree"
+                              itemLabel = "Strongly Disagree"/>
+            </h:selectOneRadio>
+
+
+            <h:outputText style ="font-weight:bold" value = "Comments (Resources and Administration) - Please press Enter after inputting"/>
+            <h:inputText value = "#{setDB.comment3}" rows="5" cols="80"  />
+
+            <f:facet name = "footer">
+                <h:panelGroup style = "display:block; text-align:center">
+
+                </h:panelGroup>
+            </f:facet>
+        </h:panelGrid>
+        <h:commandButton value = "Next" action = "#{setDB.toCategory4}"/>
+    </h:form>
+
+
+</h:body>
+
+</html>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: canad
+  Date: 4/29/2021
+  Time: 10:56 AM
+-->
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core">
+
+<h:head>
+    <title>Welcome!</title>
+</h:head>
+<h1 style="text-align:center">Welcome to UHCL Course Evulation Spring 2021</h1>
+<h:body>
+
+    <h:form >
+        <h:panelGrid id = "panel" columns = "2" border = "1"
+                     cellpadding = "10" cellspacing = "1"  >
+
+            <f:facet name = "header">
+                <h:outputText value = "Course Information"/>
+            </f:facet>
+            <h:outputLabel value = "Course" />
+            <h:inputText  value = "#{setDB.course}"/>
+            <h:outputLabel value = "Instructor Name" />
+            <h:inputText value = "#{setDB.instructor}"/>
+            <h:outputLabel value = "Student Name" />
+            <h:inputText value = "#{setDB.studentName}"/>
+
+            <f:facet name = "footer">
+                <h:panelGroup style = "display:block; text-align:center">
+                    <h:commandButton value = "Begin" action = "#{setDB.toCategory1}" />
+                </h:panelGroup>
+            </f:facet>
+        </h:panelGrid>
+    </h:form>
+
+</h:body>
+
+</html>

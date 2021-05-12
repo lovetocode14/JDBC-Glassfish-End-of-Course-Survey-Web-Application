@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: canad
+  Date: 4/29/2021
+  Time: 11:57 AM
+-->
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui = "http://java.sun.com/jsf/facelets">
+
+<h:head>
+    <title>Teaching Approaches</title>
+</h:head>
+#{setDB.pass}
+#{setDB.user}
+<h:body>
+    <h:form>
+        <h:panelGrid id = "panel" columns = "2" border = "1"
+                     cellpadding ="10" cellspacing = "1">
+            <f:facet name = "header">
+                <h:outputText value = "Teaching Approaches (1/7)"/>
+            </f:facet>
+            <h:outputText style="font-weight:bold" value = "1. The instructor stimulated my interest in the
+                                subject"/>
+            <h:selectOneRadio value = "#{setDB.answer1}">
+
+                <f:selectItem itemValue = "Strongly Agree"
+                              itemLabel = "Strongly Agree"/>
+                <f:selectItem itemValue = "Agree"
+                              itemLabel = "Agree"/>
+                <f:selectItem itemValue = "Neutral"
+                              itemLabel = "Neutral"/>
+                <f:selectItem itemValue = "Disagree"
+                              itemLabel = "Disagree"/>
+                <f:selectItem itemValue = "Strongly Disagree"
+                              itemLabel = "Strongly Disagree"/>
+            </h:selectOneRadio>
+
+
+            <h:outputText style="font-weight:bold" value = "2. The instructor managed classroom time and pace well"/>
+            <h:selectOneRadio value = "#{setDB.answer2}">
+                <f:selectItem itemValue = "Strongly Agree"
+                              itemLabel = "Strongly Agree"/>
+                <f:selectItem itemValue = "Agree"
+                              itemLabel = "Agree"/>
+                <f:selectItem itemValue = "Neutral"
+                              itemLabel = "Neutral"/>
+                <f:selectItem itemValue = "Disagree"
+                              itemLabel = "Disagree"/>
+                <f:selectItem itemValue = "Strongly Disagree"
+                              itemLabel = "Strongly Disagree"/>
+            </h:selectOneRadio>
+
+
+            <h:outputText style="font-weight:bold" value = "3. The instructor was organized and prepared for every class"/>
+            <h:selectOneRadio value = "#{setDB.answer3}">
+                <f:selectItem itemValue = "Strongly Agree"
+                              itemLabel = "Strongly Agree"/>
+                <f:selectItem itemValue = "Agree"
+                              itemLabel = "Agree"/>
+                <f:selectItem itemValue = "Neutral"
+                              itemLabel = "Neutral"/>
+                <f:selectItem itemValue = "Disagree"
+                              itemLabel = "Disagree"/>
+                <f:selectItem itemValue = "Strongly Disagree"
+                              itemLabel = "Strongly Disagree"/>
+            </h:selectOneRadio>
+
+            <h:outputText style="font-weight:bold" value = "4. The instructor encouraged discussions and responded to questions"/>
+            <h:selectOneRadio value = "#{setDB.answer4}">
+                <f:selectItem itemValue = "Strongly Agree"
+                              itemLabel = "Strongly Agree"/>
+                <f:selectItem itemValue = "Agree"
+                              itemLabel = "Agree"/>
+                <f:selectItem itemValue = "Neutral"
+                              itemLabel = "Neutral"/>
+                <f:selectItem itemValue = "Disagree"
+                              itemLabel = "Disagree"/>
+                <f:selectItem itemValue = "Strongly Disagree"
+                              itemLabel = "Strongly Disagree"/>
+            </h:selectOneRadio>
+
+            <h:outputText style="font-weight:bold" value = "5. The instructor demonstrated in-depth knowledge of the subject"/>
+            <h:selectOneRadio value = "#{setDB.answer5}">
+                <f:selectItem itemValue = "Strongly Agree"
+                              itemLabel = "Strongly Agree"/>
+                <f:selectItem itemValue = "Agree"
+                              itemLabel = "Agree"/>
+                <f:selectItem itemValue = "Neutral"
+                              itemLabel = "Neutral"/>
+                <f:selectItem itemValue = "Disagree"
+                              itemLabel = "Disagree"/>
+                <f:selectItem itemValue = "Strongly Disagree"
+                              itemLabel = "Strongly Disagree"/>
+            </h:selectOneRadio>
+
+            <h:outputText style="font-weight:bold" value = "6. The instructor appeared enthusiastic and interested"/>
+            <h:selectOneRadio value = "#{setDB.answer6}">
+                <f:selectItem itemValue = "Strongly Agree"
+                              itemLabel = "Strongly Agree"/>
+                <f:selectItem itemValue = "Agree"
+                              itemLabel = "Agree"/>
+                <f:selectItem itemValue = "Neutral"
+                              itemLabel = "Neutral"/>
+                <f:selectItem itemValue = "Disagree"
+                              itemLabel = "Disagree"/>
+                <f:selectItem itemValue = "Strongly Disagree"
+                              itemLabel = "Strongly Disagree"/>
+            </h:selectOneRadio>
+
+            <h:outputText style="font-weight:bold" value = "7. The instructor used a variety of instructional
+                                                                methods to reach the course objectives
+                                                                (e.g. group discussions, student presentations, etc)"/>
+            <h:selectOneRadio value = "#{setDB.answer7}">
+                <f:selectItem itemValue = "Strongly Agree"
+                              itemLabel = "Strongly Agree"/>
+                <f:selectItem itemValue = "Agree"
+                              itemLabel = "Agree"/>
+                <f:selectItem itemValue = "Neutral"
+                              itemLabel = "Neutral"/>
+                <f:selectItem itemValue = "Disagree"
+                              itemLabel = "Disagree"/>
+                <f:selectItem itemValue = "Strongly Disagree"
+                              itemLabel = "Strongly Disagree"/>
+            </h:selectOneRadio>
+
+            <h:outputText style="font-weight:bold" value = "8. The instructor challenged students to do their best work"/>
+            <h:selectOneRadio value = "#{setDB.answer8}">
+                <f:selectItem itemValue = "Strongly Agree"
+                              itemLabel = "Strongly Agree"/>
+                <f:selectItem itemValue = "Agree"
+                              itemLabel = "Agree"/>
+                <f:selectItem itemValue = "Neutral"
+                              itemLabel = "Neutral"/>
+                <f:selectItem itemValue = "Disagree"
+                              itemLabel = "Disagree"/>
+                <f:selectItem itemValue = "Strongly Disagree"
+                              itemLabel = "Strongly Disagree"/>
+            </h:selectOneRadio>
+
+            <h:outputText style="font-weight:bold" value = "9. The instructor was accessible outside of class"/>
+            <h:selectOneRadio value = "#{setDB.answer9}">
+                <f:selectItem itemValue = "Yes"
+                              itemLabel = "Yes"/>
+                <f:selectItem itemValue = "No"
+                              itemLabel = "No"/>
+            </h:selectOneRadio>
+
+            <h:outputText style="font-weight:bold" value = "10. Did the instructor actively attemp to prevent cheating in the course?"/>
+            <h:selectOneRadio value = "#{setDB.answer10}">
+                <f:selectItem itemValue = "Yes"
+                              itemLabel = "Yes"/>
+                <f:selectItem itemValue = "No"
+                              itemLabel = "No"/>
+            </h:selectOneRadio>
+
+            <h:outputText style ="font-weight:bold" value = "Comments (Teaching Approaches) - Please press Enter after inputting"/>
+            <h:inputText value = "#{setDB.comment1}" rows="5" cols="80"  />
+
+            <f:facet name = "footer">
+                <h:panelGroup style = "display:block; text-align:center">
+
+                </h:panelGroup>
+            </f:facet>
+        </h:panelGrid>
+        <h:commandButton value = "Next" action = "#{setDB.toCategory2}"/>
+    </h:form>
+
+</h:body>
+
+</html>
