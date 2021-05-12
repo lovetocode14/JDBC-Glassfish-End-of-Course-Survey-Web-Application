@@ -1,0 +1,14 @@
+create database surveyDB 
+
+CREATE TABLE surveyData (
+    course VARCHAR(15), instructor VARCHAR(30), student VARCHAR(30), user VARCHAR(30), password VARCHAR(30), answer1 VARCHAR(20),
+                     answer2 VARCHAR(20), answer3 VARCHAR(20), answer4 VARCHAR(20), answer5 VARCHAR(20), answer6 VARCHAR(20), answer7 VARCHAR(20), 
+                    answer8 VARCHAR(20), answer9 VARCHAR(20), answer10 VARCHAR(20), answer11 VARCHAR(20), answer12 VARCHAR(20), answer13 VARCHAR(20), 
+                     answer14 VARCHAR(20), answer15 VARCHAR(20), answer16 VARCHAR(20), answer17 VARCHAR(20), answer18 VARCHAR(20), answer19 VARCHAR(20), 
+                     answer20 VARCHAR(20), answer21 VARCHAR(20), answer22 VARCHAR(20), answer23 VARCHAR(20), answer24 VARCHAR(20), answer25 VARCHAR(20),
+                     answer26 VARCHAR(20), answer27 VARCHAR(20), comment1 VARCHAR(20), comment2 VARCHAR(20), comment3 VARCHAR(20), comment4 VARCHAR(20),
+                     comment5 VARCHAR(20), comment6 VARCHAR(20), comment7 VARCHAR(20), comment8 VARCHAR(20), comment9 VARCHAR(20), comment10 VARCHAR(20))
+
+
+
+
